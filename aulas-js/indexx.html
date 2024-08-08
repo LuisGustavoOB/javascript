@@ -4,17 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Laços de repetição</title>
+    <style>
+
+        button.start{
+            background-color: rgb(58, 238, 58);
+            padding: 40px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 2em;
+            margin: auto;
+        }
+
+        button.stop{
+            background-color: rgb(243, 68, 68);
+            padding: 40px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 2em;
+        }
+    </style> 
 </head>
 <body>
-    <h1>Aprendendo JavaScript</h1>
-    <p id="teste"></p><br>
-    <select name="" id="ano">
-        <option value="" selected disabled>Selecione o ano
-        </option>
-    </select>
+    <h1>Controle do Tempo</h1>
+    <h2 id="tempo">1000</h2>
+    <button onclick="ativarContagem()" class="start">Ativar Contagem</button>
+    <button onclick="desativarContagem()" class="stop">Parar Contagem</button>
 
 
 
-    <script src="js/for.js"></script>
+    <script src="js/eventotempo.js"></script>
 </body>
 </html>
